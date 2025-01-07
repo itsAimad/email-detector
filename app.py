@@ -4,8 +4,8 @@ import joblib
 
 # load the model and Vectorizer
 
-model = joblib.load(r"C:\Users\Aimad\OneDrive\Documents\python\Email Detector\model\spam_classifier.pkl")
-cv = joblib.load(r"C:\Users\Aimad\OneDrive\Documents\python\Email Detector\model\count_vectorizer.pkl")
+model = joblib.load(r"Email Detector\model\spam_classifier.pkl")
+cv = joblib.load(r"Email Detector\model\count_vectorizer.pkl")
 
 
 def predict_user_mail(mail,cv=cv,model=model):
